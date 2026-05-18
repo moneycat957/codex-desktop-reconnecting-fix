@@ -1,0 +1,13 @@
+# Alternative HTTP/SSE-only provider workaround.
+# This may not work with every ChatGPT-auth setup.
+# If you see "Missing scopes: api.responses.write", roll it back.
+
+model_provider = "openai_http"
+model = "gpt-5.5"
+model_reasoning_effort = "medium"
+
+[model_providers.openai_http]
+name = "OpenAI HTTP only"
+wire_api = "responses"
+supports_websockets = false
+requires_openai_auth = true
