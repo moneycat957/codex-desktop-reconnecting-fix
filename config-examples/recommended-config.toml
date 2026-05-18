@@ -1,0 +1,17 @@
+# Recommended workaround tested with ChatGPT auth on Windows.
+# Merge these keys into %USERPROFILE%\.codex\config.toml.
+
+model = "gpt-5.5"
+model_reasoning_effort = "medium"
+
+[features]
+apps = false
+browser_use = false
+browser_use_external = false
+in_app_browser = false
+computer_use = false
+plugins = false
+tool_search = false
+tool_suggest = false
+workspace_dependencies = false
+
